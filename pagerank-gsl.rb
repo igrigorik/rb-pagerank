@@ -26,7 +26,7 @@ end
 # page 1 -> page 2  (0.33)
 # page 2 -> page 3  (0.33)
 # page 3 -> page 1  (0.33)
-puts "Circular: ", pagerank(Matrix[[0,0,1], [0,0,1], [1,0,0]])
+puts "Circular: ", pagerank(Matrix[[0,0,1], [1,0,0], [0,1,0]])
 
 # page 1 -> page 3  (0.05)    # page 1 & page 2 have minimal postrank values
 # page 2 -> page 3  (0.05)    # min value = min(t * Teleport Vector)
@@ -42,3 +42,14 @@ puts "Converge: ", pagerank(Matrix[[0,0,0], [0.5,0,0], [0.5,1,1]])
 # page 2 -> page 1, page 3  (0.13)
 # page 3 -> page 3          (0.69)
 puts "Linked:", pagerank(Matrix[[0.5,0.5,0], [0.5,0,0], [0,0.5,1.0]])
+
+
+
+
+
+
+
+
+
+
+
